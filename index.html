@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculatrice</title>
+</head>
+
+<body>
+    <form name="calculatrice" class="calc">
+        <input type="text" name="ecran" class="ecran" readonly="">
+        <span onclick="document.calculatrice.ecran.value = ''" class="effacer">Effacer</span>
+        <span onclick="afficher('/')" class="num">/</span>
+        <span onclick="afficher('%')" class="num">%</span>
+        <span onclick="afficher('7')" class="num">7</span>
+        <span onclick="afficher('8')" class="num">8</span>
+        <span onclick="afficher('9')" class="num">9</span>
+        <span onclick="afficher('*')" class="num">x</span>
+        <span onclick="afficher('4')" class="num">4</span>
+        <span onclick="afficher('5')" class="num">5</span>
+        <span onclick="afficher('6')" class="num">6</span>
+        <span onclick="afficher('-')" class="num">-</span>
+        <span onclick="afficher('1')" class="num">1</span>
+        <span onclick="afficher('2')" class="num">2</span>
+        <span onclick="afficher('3')" class="num">3</span>
+        <span onclick="afficher('+')" class="num">+</span>
+        <span onclick="afficher('0')" class="num">0</span>
+        <span onclick="afficher('00')" class="num">00</span>
+        <span onclick="afficher('.')" class="num">.</span>
+        <span onclick="egal()" class="egal">=</span>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
